@@ -136,11 +136,11 @@ System.out.println("身長は"+tall+"cmです");
 System.out.println("体重は"+wait+"kgです");
 System.out.println("好きな食べ物は"+like+"です");
 
-double Vtall = 1.705;
+double BMI = wait / ((tall / 100) * (tall / 100));
 
-double BMI = wait / (Vtall*Vtall);
+String result = String.format("%.1f", BMI);
 
-System.out.println("BMIは"+BMI+"です。");
+System.out.println("BMIは"+result+"です。");
 
 
  name = "鈴木一郎";
@@ -153,16 +153,80 @@ System.out.println("BMIは"+BMI+"です。");
 
 like ="オムライス";
 
-Vtall = 1.685;
+System.out.println("初めまして"+name+"です");
+System.out.println("年齢は"+age+"歳です");
+System.out.println("身長は"+tall+"cmです");
+System.out.println("体重は"+wait+"kgです");
+System.out.println("好きな食べ物は"+like+"です");
+BMI = wait / ((tall / 100) * (tall / 100));
 
-BMI = 22.6;
+result = String.format("%.1f", BMI);
+
+System.out.println("BMIは"+result+"です。");
+
+
+ age = age +age;
+ 
+ tall = tall + tall;
+ 
+ wait = wait + wait;
+ 
+ BMI = wait / ((tall / 100) * (tall / 100));
+
+ result = String.format("%.2f", BMI);
+ 
+ System.out.println("初めまして"+name+"です");
+ System.out.println("年齢は"+age+"歳です");
+ System.out.println("身長は"+tall+"cmです");
+ System.out.println("体重は"+wait+"kgです");
+ System.out.println("好きな食べ物は"+like+"です");
+ System.out.println("BMIは"+result+"です。");
+ 
+ 
+ 
+ name = "鈴木一郎";
+ 
+ age = 24;
+ 
+ tall = 168.5;
+ 
+ wait = 64.2;
+
+like ="オムライス";
+
+BMI = wait / ((tall / 100) * (tall / 100));
+
+result = String.format("%.1f", BMI);
+
+boolean answer = age > 25;
 
 System.out.println("初めまして"+name+"です");
 System.out.println("年齢は"+age+"歳です");
 System.out.println("身長は"+tall+"cmです");
 System.out.println("体重は"+wait+"kgです");
 System.out.println("好きな食べ物は"+like+"です");
-System.out.println("BMIは"+BMI+"です。");
+System.out.println("BMIは"+result+"です。");
+System.out.println(answer);
+
+String AGE = String.valueOf(age);
+String WAIT = String.valueOf(wait);
+String TALL = String.valueOf(tall);
+
+System.out.println("年齢は"+AGE+"歳です");
+System.out.println("体重は"+WAIT+"kgです");
+System.out.println("身長は"+TALL+"cmです");
+
+
+age = Integer.parseInt(AGE);
+wait = Integer.parseInt(WAIT);
+
+System.out.println(age);
+System.out.println(Math.round(wait));
+
+
+
+
+
 
 
 }
